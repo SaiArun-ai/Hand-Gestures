@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <title>Hand Gestures</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+  
+    <center>
+      <h3 type = "button" class = "btn btn-success">
+        Hand Gestures to Emoji!
+        <br>
+        <span>👍</span>
+        <span>✌️</span>
+        <span>👌</span>
+      </h3>
+      <br><br>
+
+      <p style="font-size: 22px;">Take your selfie to generate emoji
+      	<br>
+        <b style="color: yellow">Are you showing the hand gesture for amazing?</b>
+        <br>
+        <b style="color: black">Are you showing the hand gesture for best?</b>
+        <br>
+        <b style="color: red">Are you showing the hand gesture for victory?</b>
+        <br>
+      </p>
+      <div class = "col-md-4 col-sm-8 col-xs-12">
+        <label>Webcam View - </label>
+        <div id = "WS"></div>
+        <br><br>
+        <button class = "btn btn-warning" onclick="TS()" id = "TedImportante">Take Snapshot</button>
+      </div>
+      <div class ="col-md-4 col-sm-12 col-xs-12">
+        <div>
+          <label id = "P1">Prediction 1 - </label>
+          <label id = "P1N"></label>
+          <label id = "P1E"></label>
+        </div>
+        <div>
+          <label id = "P2">Prediction 2 - </label>
+          <label id = "P2N"></label>
+          <label id = "P2E"></label>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id = "SIUnitOfWeightIsNewton">
+          <!--Physics ID Unit Of Weight-->
+        </div>
+        <br><br>
+        <button class = "btn btn-warning" onclick="SEENOW()" id = "TedImportranse">Predicte Le Hand Gèstùres</button>
+      </div>
+
+    </center>
+
+  </div>
+
+<script src="main.js"></script>
+
+  </body>
+</html>
+
+ 

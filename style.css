@@ -1,0 +1,124 @@
+body {
+    text-align: center;
+    color: white;
+    background: radial-gradient(#e7cf49,#0a49d3);;
+    display: grid;
+    grid-template-areas: ". . ." ". text ." ". . .";
+    grid-template-rows: 1fr auto 1fr;
+    grid-template-columns: 1fr auto 1fr;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    overflow: hidden;
+    background-image: radial-gradient(circle, #52f08e, #df78f1);
+  }
+  span
+  {
+    font-size: 30px;
+  }
+  #camera , #result
+  {
+    border: 2px dashed black;
+    width: 350px;
+    height: 300px; 
+  }
+  #result_emotion_name ,#result_emotion_name2  
+  {
+    color: black;
+  }
+  .emotion_name
+  {
+    font-size: 40px;
+  }
+  .emoji
+  {
+    font-size:48px;
+  }
+  #TedImportante{
+      border-color: turquoise;
+      border-style: ridge;
+      text-shadow: 10px 10px 10px blue;
+  }
+  #CheckeredSnapshot{
+      border-color: gold;    
+  } 
+  .imgo:hover{
+      animation-name: Beveler;
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+  }
+/*  @keyframes Beveler{ 
+      from, 1%, 2%, 3%, to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000); transform: translate3d(0,0,0);
+      }
+      5%,7%{animation-timing-function: cubic-bezier(0.955, 0.010, 0.850, 0.960); transform: translate3d(30px, 0px, 0);
+      }
+      9%{ animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060); transform: translate3d(-60px, 0px, 0);}
+      10% {
+        transform: scale3d(1.5, 1.5, 1.5);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+      from {
+        transform: scale3d(1, 1, 1);
+      }
+    
+      12% {
+        transform: scale3d(1.25, 0.75, 1);
+      }
+    
+      18% {
+        transform: scale3d(0.75, 1.25, 1);
+      }
+    
+      25% {
+        transform: scale3d(1.15, 0.85, 1);
+      }
+    
+      32% {
+        transform: scale3d(1.95, 1.05, 1);
+      }
+    
+      45% {
+        transform: scale3d(1.05, .95, 1);
+      }
+    
+      to {
+        transform: scale3d(1, 1, 1);
+      }
+      from, to {
+        transform: translate3d(0, 0, 0);
+      }
+    
+      47%, 58%, 67%, 71%, 79% {
+        transform: translate3d(-10px, 0, 0);
+      }
+    
+      81%, 83%, 85%, 89% {
+        transform: translate3d(10px, 0, 0);
+      }
+      90%{transform: translate3d(10px,10px,10px);
+      }
+      93% {animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060); transform: translate3d(-60px, 0px, 0);
+      }
+      96% { transform: translate3d(0px,30px,0px); }
+  }*/
+  @keyframes Beveler{
+    from,1% {
+      transform:scale3d(1.8,2,1);
+      border-color:gold;
+      border-radius: 5cm;
+      border-width: 1cm;
+      border-style: groove;
+    }20% {
+      transform:skew(100deg,50deg);
+      transform: rotateZ(10deg);
+    }40%{
+      border-color:radial-gradient(red,goldenrod,purple,lavender,blue,indigo);
+      border-width: 3cm;
+      border-style: ridge;
+      transform:perspective(2);
+    }
+  }
